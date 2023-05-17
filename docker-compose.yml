@@ -25,7 +25,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./baseDatos/inicio.sql:/docker-entrypoint-initdb.d/inicio.sql
+      - ./bd/inicio.sql:/docker-entrypoint-initdb.d/inicio.sql
     command: --init-file /docker-entrypoint-initdb.d/inicio.sql
     networks:
       mynetwork:
