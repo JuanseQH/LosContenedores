@@ -30,7 +30,7 @@ def index():
     if password == VALID_PASSWORD:
         return redirect('/dashboard')
     else:
-        return redirect("https://www.youtube.com/watch?v=mCdA4bJAGGk")
+        return redirect("/nouser")
 
 
 app = dash.Dash(__name__, server=server, url_base_pathname='/dashboard/')
