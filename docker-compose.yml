@@ -31,7 +31,7 @@ services:
       mynetwork:
         ipv4_address: 192.168.10.3
 
-    container3:
+  container3:
     image: ubuntu
     container_name: container3
     volumes:
@@ -40,8 +40,8 @@ services:
     ports:
       - 5600:5600
     networks:
-      mynetwork:
-        ipv4_address: 192.168.10.4
+     mynetwork:
+       ipv4_address: 192.168.10.4
 
 
 networks:
