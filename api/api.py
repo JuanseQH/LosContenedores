@@ -30,13 +30,13 @@ def index():
     if password == VALID_PASSWORD:
         return redirect('/dashboard')
     else:
-        return redirect("/nouser")
+        return redirect("https://www.youtube.com/watch?v=jYkixAsQFtk")
 
 
 app = dash.Dash(__name__, server=server, url_base_pathname='/dashboard/')
 
 app.layout = html.Div([
-    html.H1("Mapa con niveles"),
+    html.H1("Mapa de Estaciones con niveles"),
     dcc.Graph(figure=fig),
 ])
 
